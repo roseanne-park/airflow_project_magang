@@ -1,0 +1,17 @@
+{"timestamp":"2025-12-27T17:24:56.122929Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-27T17:24:56.123197Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bps_simdasi_pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-27T17:24:56.628724Z","level":"info","event":"❌ Gagal ambil dari Google Sheet: index 3 is out of bounds for axis 0 with size 3","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:24:56.631665Z","level":"info","event":"⚠️ Tidak ada URL API yang ditemukan dari Google Sheet.","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:24:56.628589Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/bps_simdasi_pipeline.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2025-12-27T17:24:56.629023Z","level":"warning","event":"The `airflow.utils.task_group.TaskGroup` attribute is deprecated. Please use `'airflow.sdk.TaskGroup'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/bps_simdasi_pipeline.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2025-12-27T17:24:56.629094Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/bps_simdasi_pipeline.py","lineno":5,"logger":"py.warnings"}
+{"timestamp":"2025-12-27T17:24:56.629152Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/bps_simdasi_pipeline.py","lineno":5,"logger":"py.warnings"}
+{"timestamp":"2025-12-27T17:24:56.649877Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:24:56.650030Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:24:56.650147Z","level":"info","event":"Current task name:task_0_check_is_last_sunday","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:24:56.650240Z","level":"info","event":"Dag name:bps_simdasi_pipeline","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:24:56.650332Z","level":"info","event":"✅ Triggered MANUAL. Melanjutkan pipeline.","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:24:56.649505Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-12-27T17:24:56.659682Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:24:56.662669Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:24:56.663889Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): task_0_check_is_last_sunday>","logger":"task.stdout"}

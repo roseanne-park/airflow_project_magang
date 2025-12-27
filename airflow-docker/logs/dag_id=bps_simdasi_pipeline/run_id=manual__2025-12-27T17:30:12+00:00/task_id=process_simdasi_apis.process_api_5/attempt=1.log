@@ -1,0 +1,57 @@
+{"timestamp":"2025-12-27T17:30:52.205985Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-27T17:30:52.206400Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bps_simdasi_pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-27T17:30:52.676180Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:52.676385Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:52.676575Z","level":"info","event":"Current task name:process_simdasi_apis.process_api_5","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:52.676691Z","level":"info","event":"Dag name:bps_simdasi_pipeline","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:52.677837Z","level":"info","event":"🔁 Processing URL: https://webapi.bps.go.id/v1/api/interoperabilitas/datasource/simdasi/id/25/tahun/2023/id_tabel/UUROM3lMeGsxZ0czT2xFeEJsK0VWZz09/wilayah/3500000/key/79452e4c302f8921ad36cd2bf55f0630","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:52.677969Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:52.678153Z","level":"info","event":"🔄 Mencoba mengambil daftar tahun yang tersedia secara otomatis...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:54.238088Z","level":"info","event":"✅ Tahun yang tersedia ditemukan: [2017, 2018, 2019, 2020, 2021, 2022, 2023]","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:54.241175Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:54.241526Z","level":"info","event":"--- Memulai Loop Pengambilan Data SIMDASI ---","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:54.241735Z","level":"info","event":"🔄 Mengambil tahun 2023...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:54.944651Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2023.","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:54.944895Z","level":"info","event":"🔄 Mengambil tahun 2022...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:55.604635Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2022.","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:55.605259Z","level":"info","event":"🔄 Mengambil tahun 2021...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:56.281780Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2021.","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:56.282096Z","level":"info","event":"🔄 Mengambil tahun 2020...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:56.948426Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2020.","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:56.948985Z","level":"info","event":"🔄 Mengambil tahun 2019...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:57.608801Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2019.","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:57.610333Z","level":"info","event":"🔄 Mengambil tahun 2018...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:58.275269Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2018.","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:58.275833Z","level":"info","event":"🔄 Mengambil tahun 2017...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:58.948753Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2017.","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:58.958281Z","level":"info","event":"✅Yeay Data berhasil ditranspose menjadi format long (jumlah baris: 1365).","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:58.959569Z","level":"info","event":"Skema: 'kesehatan', Tabel: 'penduduk_yg_memiliki_jaminan_kesehatan'","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.132212Z","level":"info","event":"Memastikan skema 'kesehatan' ada...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.222616Z","level":"info","event":"✅ Skema 'kesehatan' siap.","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.223744Z","level":"info","event":"Menulis data ke tabel 'kesehatan.penduduk_yg_memiliki_jaminan_kesehatan'...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.866726Z","level":"info","event":"❌YAH GABISA Terjadi kesalahan saat operasi database: (psycopg2.errors.DuplicateColumn) column \"persentase_penduduk_yang_memiliki_jaminan_kesehatan_menurut_jen\" specified more than once","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.867008Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.867213Z","level":"info","event":"[SQL:","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.867386Z","level":"info","event":"CREATE TABLE kesehatan.penduduk_yg_memiliki_jaminan_kesehatan (","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.867535Z","level":"info","event":"\tid BIGINT,","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.867679Z","level":"info","event":"\tid_kategori BIGINT,","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.867794Z","level":"info","event":"\tkabupatenkota TEXT,","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.867942Z","level":"info","event":"\ttahun BIGINT,","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.868123Z","level":"info","event":"\tpersentase_penduduk_yang_memiliki_jaminan_kesehatan_menurut_jenis_jaminan_bpjs_kesehatan_penerima_bantuan_iuran_pbi FLOAT(53),","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.868262Z","level":"info","event":"\tpersentase_penduduk_yang_memiliki_jaminan_kesehatan_menurut_jenis_jaminan_bpjs_kesehatan_nonpenerima_bantuan_iuran_nonpbi FLOAT(53),","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.868391Z","level":"info","event":"\tpersentase_penduduk_yang_memiliki_jaminan_kesehatan_menurut_jenis_jaminan_jamkesda FLOAT(53),","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.868515Z","level":"info","event":"\tpersentase_penduduk_yang_memiliki_jaminan_kesehatan_menurut_jenis_jaminan_asuransi_swasta FLOAT(53),","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.868634Z","level":"info","event":"\tpersentase_penduduk_yang_memiliki_jaminan_kesehatan_menurut_jenis_jaminan_perusahaankantor FLOAT(53)","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.868740Z","level":"info","event":")","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.868850Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.868965Z","level":"info","event":"]","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.869080Z","level":"info","event":"(Background on this error at: https://sqlalche.me/e/14/f405)","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:30:59.869193Z","level":"info","event":"Skema: 'kesehatan', Tabel: 'penduduk_yg_memiliki_jaminan_kesehatan_cl'","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:31:00.026044Z","level":"info","event":"Memastikan skema 'kesehatan' ada...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:31:00.114931Z","level":"info","event":"✅ Skema 'kesehatan' siap.","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:31:00.116444Z","level":"info","event":"Menulis data ke tabel 'kesehatan.penduduk_yg_memiliki_jaminan_kesehatan_cl'...","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:31:01.019837Z","level":"info","event":"✅CONGRATS Data berhasil disimpan ke PostgreSQL: kesehatan.penduduk_yg_memiliki_jaminan_kesehatan_cl","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:31:01.020426Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-12-27T17:31:01.035667Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:31:01.035900Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-12-27T17:31:01.036196Z","level":"info","event":"Task operator:<Task(PythonOperator): process_simdasi_apis.process_api_5>","logger":"task.stdout"}
